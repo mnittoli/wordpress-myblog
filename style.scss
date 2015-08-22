@@ -1,0 +1,54 @@
+/*
+Theme Name: myblog
+Theme URI: http://mikenittoli.com/
+Author: Michael
+Author URI: http://mikenittoli.com/
+Description: This is the world's greatest wordpress theme created by mike
+Version: 1.0
+License: GNU General Public License
+Tags: light, white, one-column, two-columns, left-sidebar, right-sidebar, flexible-width, custom-backgroud, custom-header, custom-menu, featured-images, flexible-header, microformats, post-formats, rtl-language-support, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-style: normal;
+}
+
+.fontawesome-share {
+  font-family: FontAwesome;
+  font-style: normal;
+}
+.fontawesome-comment {
+  font-family: FontAwesome;
+  font-style: normal;
+}
+
+.article-wrapper {
+  font-size: 19px;
+  line-height: 29px;
+  width: 628px;
+  margin: 0px;
+  margin: auto;
+  font-family: 'Source Serif Pro';
+}
+
+i+p::first-line{
+  font-size: 24px;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+h1, h2, h4, h5, h6 {
+	color: #222;
+}
+h3 {
+	color: red;
+	font-size: 10px;
+}
+p {
+	color: #666;
+}
