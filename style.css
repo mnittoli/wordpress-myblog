@@ -129,4 +129,10 @@ p {
 .author a {
   color: #808080; }
 
+h1 {
+  font-size: 38px;
+  color: #d35400;
+  font-family: raleway;
+  font-weight: bold; }
+
 /*# sourceMappingURL=style.css.map */

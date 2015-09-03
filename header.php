@@ -3,7 +3,6 @@
 <head>
 <?php wp_head(); ?>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url');?>">
-<link rel="stylesheet" href="http://basehold.it/30">
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script>
   WebFont.load({
@@ -22,3 +21,5 @@
 <div id="page" class="hfeed site">
      <header id="masthead" class="site-header" role="banner">
           <hgroup><h1 id="responsive_headline"><?php bloginfo('description');?></h1></hgroup>
+          <nav role="navigation" class="site-navigation main-navigation"></nav><!-- .site-navigation .main-navigation -->
+     </header><!-- #masthead .site-header -->

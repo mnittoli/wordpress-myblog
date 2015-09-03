@@ -1,6 +1,5 @@
 <?php get_header(); ?>
-<nav role="navigation" class="site-navigation main-navigation"></nav><!-- .site-navigation .main-navigation -->
-     </header><!-- #masthead .site-header -->
+
      <div id="main" class="site-main">
 <?php if (have_posts()) {?>
   <?php while (have_posts()) {?>
