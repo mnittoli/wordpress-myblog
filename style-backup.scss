@@ -1,0 +1,146 @@
+@import "susy";
+@import “compass”;
+@import “normalize”;
+@import “compass/css3/hyphenation”;
+
+/*	
+Theme Name: myblog
+Theme URI: http://mikenittoli.com/
+Author: Michael Nittoli
+Author URI: http://mikenittoli.com/
+Description: This is the world's greatest wordpress theme created by mike
+Version: 1.0
+License: GNU General Public License
+Tags: light, white, one-column, two-columns, left-sidebar, right-sidebar, flexible-width, custom-backgroud, custom-header, custom-menu, featured-images, flexible-header, microformats, post-formats, rtl-language-support, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something coool, have fun, and share what you've learned with others.
+*/
+
+$base-fontsize: 19px;
+$golden-ratio: 1.618;
+$grid-unit: $base-fontsize * $golden-ratio;
+
+
+
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-style: normal;
+}
+
+.fontawesome-share {
+  font-family: FontAwesome;
+  font-style: normal;
+}
+.fontawesome-comment {
+  font-family: FontAwesome;
+  font-style: normal;
+}
+
+$heading: 38px;
+
+html {
+	font-size: $base-fontsize;
+	line-height: $golden-ratio;
+
+	@include word-break(break-all);
+	@include hyphens(auto);
+}
+.article-wrapper {
+  font-size: $base-fontsize;
+  max-width: 628px;
+  margin: auto;
+  font-family: 'Source Serif Pro';
+}
+
+i+p::first-line{
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+h1#responsive_headline {
+	font-size: $heading;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	color: red;
+	width: 628px;
+	margin: auto;
+}
+
+h2, h4, h5, h6 {
+	color: #222;
+	font-family: 'Raleway', sans-serif;
+}
+h3 {
+	color: black;
+	font-size: $heading;
+	@media (max-width: 500px) {
+		font-size: 25px;
+		}
+	font-family: 'Raleway', sans-serif;
+	text-rendering: optimizeLegibility;
+    -moz-font-feature-settings: "liga=1, dlig=1"; 
+    -moz-font-feature-settings: "liga", "dlig"; 
+    -ms-font-feature-settings: "liga", "dlig"; 
+    -o-font-feature-settings: "liga", "dlig"; 
+    -webkit-font-feature-settings: "liga", "dlig"; 
+    font-feature-settings: "liga", "dlig";
+}
+p {
+	color: #666;
+}
+.read-more {
+	color: blue;
+	text_decoration: underline;
+	display: block;
+}
+.author {
+	max-width: 628px;
+	margin: auto;
+	color: #808080;
+}
+.author a {
+	color: #808080;
+}
+h1 {
+	font-size:  $heading;
+	color: #d35400;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+.main-navigation {
+	width: 628px;
+	margin: auto;
+	li { display: inline-block; }
+}
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+
+  li { display: inline-block; }
+
+  a {
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+	&:link { color: black; background-color: #ddd; border-radius: 3px;}
+	&:hover { color: white; background-color: red; }
+	&:visited { color: #444; }
+  }
+}
+form.searchform {
+	width: 628px;
+	margin: auto;
+}
+h1.green-heading {
+	color: green;
+}

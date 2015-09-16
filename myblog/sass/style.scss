@@ -1,0 +1,166 @@
+@import "susy";
+@import "compass";
+@import "compass/reset";
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-style: normal;
+}
+
+.fontawesome-share {
+  font-family: FontAwesome;
+  font-style: normal;
+}
+.fontawesome-comment {
+  font-family: FontAwesome;
+  font-style: normal;
+}
+
+$base-font-size: 20px;
+$base-line-height: 36px;
+
+$round-to-nearest-half-line: true; // Allows compass to round to  multiples of 0.5x line height 
+$rhythm-unit: "rem"; // Sets rhythm unit to rem. Remove to use default em unit. 
+
+$h1-fz: 45px;
+$h2-fz: 30px;
+$h3-fz: 24px;
+$h4-fz: 20px;
+$h5-fz: 16px;
+$h6-fz: 13px;
+
+@include establish-baseline;
+
+
+h1 {
+  @include adjust-font-size-to($h1-fz);
+}
+
+h2 {
+  @include adjust-font-size-to($h2-fz);
+}
+
+h3 {
+  @include adjust-font-size-to($h3-fz);
+}
+
+h4 {
+  @include adjust-font-size-to($h4-fz);
+}
+
+h5 {
+  @include adjust-font-size-to($h5-fz);
+}
+
+h6 {
+  @include adjust-font-size-to($h6-fz);
+}
+
+h1 {
+	color: #d35400;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+html {
+
+
+	@include word-break(break-all);
+	@include hyphens(auto);
+}
+.article-wrapper {
+  max-width: 628px;
+  margin: auto;
+  font-family: 'Source Serif Pro';
+	margin-bottom: rhythm(1);
+}
+
+i+p::first-line{
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+h1#responsive_headline {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	color: red;
+	width: 628px;
+	margin: auto;
+	margin-bottom: rhythm(1);
+}
+
+h2, h4, h5, h6 {
+	color: #222;
+	font-family: 'Raleway', sans-serif;
+}
+h3 {
+	color: black;
+	@media (max-width: 500px) {
+		}
+	font-family: 'Raleway', sans-serif;
+	text-rendering: optimizeLegibility;
+    -moz-font-feature-settings: "liga=1, dlig=1"; 
+    -moz-font-feature-settings: "liga", "dlig"; 
+    -ms-font-feature-settings: "liga", "dlig"; 
+    -o-font-feature-settings: "liga", "dlig"; 
+    -webkit-font-feature-settings: "liga", "dlig"; 
+    font-feature-settings: "liga", "dlig";
+}
+p {
+	color: #666;
+	margin-bottom: rhythm(1);
+}
+.read-more {
+	color: blue;
+	text_decoration: underline;
+	display: block;
+}
+.author {
+	max-width: 628px;
+	margin: auto;
+	color: #808080;
+}
+.author a {
+	color: #808080;
+}
+h1 {
+	color: #d35400;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+.main-navigation {
+	width: 628px;
+	margin: auto;
+	li { display: inline-block; }
+}
+nav {
+  ul {
+
+    list-style: none;
+	margin-bottom: rhythm(1);
+ }
+
+  li { display: inline-block; }
+
+  a {
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+	&:link { color: black; background-color: #ddd; border-radius: 3px;}
+	&:hover { color: white; background-color: red; }
+	&:visited { color: #444; }
+  }
+}
+form.searchform {
+	width: 628px;
+	margin: auto;
+}
+h1.green-heading {
+	color: green;
+}
