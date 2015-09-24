@@ -22,6 +22,6 @@
 <div id="page" class="hfeed site">
      <header id="masthead" class="site-header" role="banner">
           <hgroup><h1 id="responsive_headline"><?php bloginfo('description');?></h1></hgroup>
-          <nav role="navigation" class="site-navigation main-navigation"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></nav><!-- .site-navigation .main-navigation -->
+          <nav role="navigation" class="site-navigation main-navigation clearfix"><?php wp_nav_menu( array( 'theme_location' => 'header-menu','menu_class'=> 'menu clearfix' ) ); ?><a href="#" id="pull">Menu</a></nav><!-- .site-navigation .main-navigation -->
           <?php get_search_form();?>
      </header><!-- #masthead .site-header -->

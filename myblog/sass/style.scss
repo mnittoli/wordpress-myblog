@@ -138,25 +138,54 @@ h1 {
 	li { display: inline-block; }
 }
 nav {
-  ul {
-
-    list-style: none;
-	margin-bottom: rhythm(1);
- }
-
-  li { display: inline-block; }
-
-  a {
-	transition: 0.5s all ease;
-	-webkit-transition: 0.5s all ease;
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
-	&:link { color: black; background-color: #ddd; border-radius: 3px;}
-	&:hover { color: white; background-color: red; }
-	&:visited { color: #444; }
-  }
+  width: 100%;
+	font-family: 'Raleway', sans-serif;
 }
+ul.menu  {
+  width: 600px;
+  @media (max-width: 600px){
+    width: 100%;
+  }  
+  @media (max-width: 480px){
+    display: none;
+  }
+  margin: auto;
+  list-style:  none;
+  height: auto;
+  line-height: 100px;
+}
+li a {
+  width: 100px;
+  @media (max-width: 480px){
+    width: 100%;
+  } 
+  display: inline-block;
+}
+li {
+  float: left;
+  @media (max-width: 600px){
+    width: 50%;
+  } @media (max-width: 480px){
+    width: 100%;
+  }  
+}
+a#pull {
+display: none;
+@media (max-width: 600px){
+display: block;
+}
+}
+.clearfix:before,
+.clearfix:after {
+      content: " ";
+      display: table;
+      }
+      .clearfix:after {
+      clear: both;
+      }
+      .clearfix {
+      *zoom: 1;
+      }
 form.searchform {
 	width: 628px;
 	margin: auto;
